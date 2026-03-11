@@ -1,0 +1,159 @@
+body {
+    background-color: rgb(172, 189, 108);
+    padding: 0px;
+    margin: 0px;
+}
+
+.kop {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(45, 45, 45);
+}
+
+.inleiding {
+    color: rgb(45, 45, 45);
+}
+
+h1 {
+    margin: 0;
+    color: rgb(97, 99, 83);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h2{
+    color:white;
+    padding-left: 3%;
+}
+p, ul{
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white;
+}
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(134, 147, 87);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+ul.nav li {
+    float: left;
+}
+
+ul.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.nav li a:hover {
+    background-color: rgb(76, 83, 50);
+}
+
+img{
+    width: 48%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.spelers {
+    width: 23.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.afbeeldingen {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+}
+
+.top {
+    margin-top: 0px;
+    padding-top: 0px;
+    background-color: rgb(148, 163, 93);
+}
+
+h1, h2, p{
+    scroll-margin-top: 50px;
+}
+
+header, nav, section {
+  margin: 0;
+}
+
+.ranking{
+    display: flex;
+    justify-content: left;
+    gap: 30%;
+}
+
+.TennisBal {
+    width: 100px;
+    height: 100px;
+}
+
+h1.score-text{
+    padding-left: 20px;
+}
+
+.scoreLayout {
+    display: flex;
+    padding-left: 30px;
+}
+
+.sets {
+    background-color: rgb(139, 148, 58);
+}
+
+.games {
+    background-color: rgb(101, 107, 41);
+}
+
+.tiebreak {
+    background-color: rgb(60, 63, 24);
+}
+
+.score {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.buttonLayout {
+    display: inline;
+    width: 100%;
+}
+
+.button-list {
+    list-style-type: none;
+}
+
+.player-button {
+    margin-bottom: 5px;
+}
+
+.reset-button {
+    margin-top: 20px;
+    margin-left: 280px;
+}
+
+.video-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 10px;
+  background: rgba(0, 128, 0, 0.1);
+}
+
+iframe {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}

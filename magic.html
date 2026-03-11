@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tennis</title>
+        <link rel="icon" type="image/x-icon" href="afbeeldingen/favicon.ico">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <ul class="nav">
+            <li><a href="index.html#kop">Start</a></li>
+            <li><a href="index.html#oorsprong">Oorsprong</a></li>
+            <li><a href="index.html#hoe">Hoe</a></li>
+            <li><a href="index.html#baan">De baan</a></li>
+            <li><a href="index.html#bekend">Bekende Spelers</a></li>
+            <li><a href="index.html#toernooien">Toernooien</a></li>
+            <li><a href="fotos.html">foto's</a></li>
+            <li><a href="magic.html">magic</a></li>
+        </ul>
+        <h1 class="score-text">tennis score keeper</h1>
+        <div class="scoreLayout">
+            <div class="sets">
+                <p id="top-1" class="score">0</p>
+                <p id="bot-1" class="score">0</p>
+            </div>
+            <div class="sets">
+                <p id="top-2" class="score">0</p>
+                <p id="bot-2" class="score">0</p>
+            </div>
+            <div class="sets">
+                <p id="top-3" class="score">0</p>
+                <p id="bot-3" class="score">0</p>
+            </div>
+            <div class="games">
+                <p id="games-1" class="score">0</p>
+                <p id="games-2" class="score">0</p>
+            </div>
+            <div class="tiebreak">
+                <p id="tb-1" class="score">0</p>
+                <p id="tb-2" class="score">0</p>
+            </div>
+            <div class="buttonLayout">
+                <ul class="button-list">
+                    <li><button class="player-button" onclick="increasePlayer1()">player 1</button></li>
+                    <li><button class="player-button" onclick="increasePlayer2()">player 2</button></li>
+                </ul>
+            </div>
+        </div>
+        <h1 class="win" id="win"></h1>
+        <button class="reset-button" onclick="reset()">reset</button>
+        <script src="magic copy.js"></script>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vQZgduxPHKw?si=HZwWRfDLzyVfiOOX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </body>
+</html>
