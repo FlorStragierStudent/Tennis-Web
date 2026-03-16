@@ -50,14 +50,14 @@ tiebreak2El.style.display = "none"
 function increasePlayer1() {
     console.log(currentSet)
     if (!TB) {
-        if(games1 == 3 && games2 == 3) {
+        if(games1 === 3 && games2 === 3) {
             games1 += 1
             games1El.innerText = score[games1]
         }
-        else if(games1 == 4 && games2 == 3 || (games1 == 3 && games2 < 3)) {
+        else if(games1 === 4 && games2 === 3 || (games1 === 3 && games2 < 3)) {
             updateSetsP1()
         }
-        else if(games1 == 3 && games2 == 4) {
+        else if(games1 === 3 && games2 === 4) {
             games2 -= 1
         }
         else {
@@ -81,13 +81,13 @@ function increasePlayer1() {
 function increasePlayer2() {
     console.log(currentSet)
     if (!TB) {
-        if(games1 == 3 && games2 == 3) {
+        if(games1 === 3 && games2 === 3) {
             games2 += 1
         }
-        else if(games1 == 3 && games2 == 4 || (games1 < 3 && games2 == 3)) {
+        else if(games1 === 3 && games2 === 4 || (games1 < 3 && games2 === 3)) {
             updateSetsP2()
         }
-        else if(games1 == 4 && games2 == 3) {
+        else if(games1 === 4 && games2 === 3) {
             games1 -= 1
         }
         else {
@@ -109,7 +109,7 @@ function increasePlayer2() {
 }
 
 function updateSetsP1() {
-    if (currentSet == 1) {
+    if (currentSet === 1) {
         set1_1 += 1
         set1_1El.innerText = set1_1
         games1 = 0
@@ -122,7 +122,7 @@ function updateSetsP1() {
             console.log("set won")
         }
     }
-    else if (currentSet == 2) {
+    else if (currentSet === 2) {
         set2_1 += 1
         set2_1El.innerText = set2_1
         games1 = 0
@@ -136,7 +136,7 @@ function updateSetsP1() {
         }
         checkForWinP1()
     }
-    else if (currentSet == 3) {
+    else if (currentSet === 3) {
         set3_1 += 1
         set3_1El.innerText = set3_1
         games1 = 0
@@ -153,7 +153,7 @@ function updateSetsP1() {
 }
 
 function updateSetsP2() {
-    if (currentSet == 1) {
+    if (currentSet === 1) {
         set1_2 += 1
         set1_2El.innerText = set1_2
         games1 = 0
@@ -165,7 +165,7 @@ function updateSetsP2() {
             w1_2 = true
         }
     }
-    else if (currentSet == 2) {
+    else if (currentSet === 2) {
         set2_2 += 1
         set2_2El.innerText = set2_2
         games1 = 0
@@ -178,7 +178,7 @@ function updateSetsP2() {
         }
         checkForWinP2()
     }
-    else if (currentSet == 3) {
+    else if (currentSet === 3) {
         set3_2 += 1
         set3_2El.innerText = set3_2
         games1 = 0
@@ -194,7 +194,7 @@ function updateSetsP2() {
 }
 
 function checkForTieBreak(gamesP1, gamesP2) {
-    if (gamesP1 == 6 && gamesP2 == 6) {
+    if (gamesP1 === 6 && gamesP2 === 6) {
         TB = true
         return true
     }
@@ -211,30 +211,30 @@ function endTiebreak(player) {
     TB = false
     TBP1 = 0
     TBP2 = 0
-    if (player == "1") {
-        if (currentSet == 1) {
+    if (player === "1") {
+        if (currentSet === 1) {
             w1_1 = true
             console.log("set won")
         }
-        else if (currentSet == 2) {
+        else if (currentSet === 2) {
             w2_1 = true
             console.log("set won")
         }
-        else if (currentSet == 3) {
+        else if (currentSet === 3) {
             w3_1 = true
             console.log("set won")
         }
     }
-    else if (player == "2") {
-        if (currentSet == 1) {
+    else if (player === "2") {
+        if (currentSet === 1) {
             w1_2 = true
             console.log("set won")
         }
-        else if (currentSet == 2) {
+        else if (currentSet === 2) {
             w2_2 = true
             console.log("set won")
         }
-        else if (currentSet == 3) {
+        else if (currentSet === 3) {
             w3_2 = true
             console.log("set won")
         }
@@ -296,8 +296,8 @@ function reset() {
     TBP1 = 0
     TBP2 = 0
 
-    tiebreak1El.innerText = 0
-    tiebreak2El.innerText = 0
+    tiebreak1El.innerText = "0"
+    tiebreak2El.innerText = "0"
 
     document.getElementById("win").innerText = ""
 }
