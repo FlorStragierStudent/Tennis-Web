@@ -134,8 +134,17 @@ h1.score-text{
     list-style-type: none;
 }
 
-.player-button {
-    margin-bottom: 5px;
+.player-button-top {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: rgb(96, 110, 31);
+    border: none;
+}
+
+.player-button-bottom {
+    border-radius: 5px;
+    background-color: rgb(96, 110, 31);
+    border: none;
 }
 
 .reset-button {
