@@ -1,7 +1,7 @@
 body {
     background-color: rgb(172, 189, 108);
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 
 .kop {
@@ -38,7 +38,6 @@ ul.nav {
     position: sticky;
     top: 0;
     z-index: 1000;
-    overflow: hidden;
 }
 
 ul.nav li {
@@ -76,8 +75,8 @@ img{
 }
 
 .top {
-    margin-top: 0px;
-    padding-top: 0px;
+    margin-top: 0;
+    padding-top: 0;
     background-color: rgb(148, 163, 93);
 }
 
